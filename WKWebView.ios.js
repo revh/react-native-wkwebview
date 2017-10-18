@@ -79,6 +79,10 @@ var WKWebView = createReactClass({
     NavigationType: NavigationType,
   },
 
+  propTypes: {
+    ...View.propTypes,
+  },
+
   getInitialState() {
     return {
       viewState: WebViewState.IDLE,
@@ -86,8 +90,6 @@ var WKWebView = createReactClass({
       startInLoadingState: true,
     };
   },
-
-  propTypes: {},
 
   componentWillMount: function() {
     if (this.props.startInLoadingState) {
