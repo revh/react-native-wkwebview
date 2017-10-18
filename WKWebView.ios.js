@@ -87,6 +87,8 @@ var WKWebView = createReactClass({
     };
   },
 
+  propTypes: {},
+
   componentWillMount: function() {
     if (this.props.startInLoadingState) {
       this.setState({viewState: WebViewState.LOADING});
